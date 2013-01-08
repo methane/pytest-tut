@@ -95,3 +95,19 @@ collected 1 items
 messege_filter_test.py .
 
 =========================== 1 passed in 0.01 seconds ===========================
+#test関数追加
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 2 items
+
+messege_filter_test.py .F
+
+=================================== FAILURES ===================================
+____________________________ test_multiple_argument ____________________________
+
+    def test_multiple_argument():
+>       filter = MessageFilter('foo', 'bar')
+E       TypeError: __init__() takes 2 positional arguments but 3 were given
+
+messege_filter_test.py:9: TypeError
+====================== 1 failed, 1 passed in 0.01 seconds ======================
