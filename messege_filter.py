@@ -3,7 +3,4 @@ class MessageFilter:
         self.words = words
 
     def detect(self, text):
-        for word in self.words:
-            if word in text:
-                return True
-        return False
+        return any(word in text for word in self.words)
