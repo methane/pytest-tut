@@ -3,4 +3,4 @@ class MessageFilter:
         self.word = word
 
     def detect(self, text):
-        return True
+        return self.word in text
