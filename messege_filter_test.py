@@ -4,6 +4,7 @@ def check_foo(filter):
     assert filter.detect("hello from foo"), "should detect message with NG word."
     assert not filter.detect("hello, world!"), "should not detect message without NG word."
     assert filter.ng_words, "should not be empty."
+    assert 'foo' in filter.ng_words
 
 def test_single_argument():
     filter = MessageFilter('foo')
@@ -15,3 +16,4 @@ def test_multiple_argument():
     assert filter.detect('hello from bar')
     check_foo(filter)
     assert len(filter.ng_words) == 2
+    assert 'bar' in filter.ng_words
