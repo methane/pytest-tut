@@ -88,6 +88,7 @@ messege_filter_test.py:6: AssertionError
 =========================== 1 failed in 0.01 seconds ===========================
 ```
 #明白な実装
+```
 ============================= test session starts ==============================
 platform darwin -- Python 3.3.0 -- pytest-2.3.4
 collected 1 items
@@ -95,7 +96,9 @@ collected 1 items
 messege_filter_test.py .
 
 =========================== 1 passed in 0.01 seconds ===========================
+```
 #test関数追加
+```
 ============================= test session starts ==============================
 platform darwin -- Python 3.3.0 -- pytest-2.3.4
 collected 2 items
@@ -111,7 +114,9 @@ E       TypeError: __init__() takes 2 positional arguments but 3 were given
 
 messege_filter_test.py:9: TypeError
 ====================== 1 failed, 1 passed in 0.01 seconds ======================
+```
 #ベタな実装
+```
 ============================= test session starts ==============================
 platform darwin -- Python 3.3.0 -- pytest-2.3.4
 collected 2 items
@@ -119,3 +124,4 @@ collected 2 items
 messege_filter_test.py ..
 
 =========================== 2 passed in 0.01 seconds ===========================
+```
