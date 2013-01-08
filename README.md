@@ -183,3 +183,13 @@ E       AttributeError: 'MessageFilter' object has no attribute 'ng_words'
 messege_filter_test.py:6: AttributeError
 =========================== 2 failed in 0.02 seconds ===========================
 ```
+#明白な実装
+```
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 2 items
+
+messege_filter_test.py ..
+
+=========================== 2 passed in 0.01 seconds ===========================
+```

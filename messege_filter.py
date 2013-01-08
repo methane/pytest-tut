@@ -1,6 +1,6 @@
 class MessageFilter:
     def __init__(self, *words):
-        self.words = words
+        self.ng_words = set(words)
 
     def detect(self, text):
-        return any(word in text for word in self.words)
+        return any(word in text for word in self.ng_words)

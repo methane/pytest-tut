@@ -8,8 +8,10 @@ def check_foo(filter):
 def test_single_argument():
     filter = MessageFilter('foo')
     check_foo(filter)
+    assert len(filter.ng_words) == 1
 
 def test_multiple_argument():
     filter = MessageFilter('foo', 'bar')
     assert filter.detect('hello from bar')
     check_foo(filter)
+    assert len(filter.ng_words) == 2
