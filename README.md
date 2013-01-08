@@ -57,3 +57,13 @@ E       AssertionError: should detect message with NG word.
 messege_filter_test.py:5: AssertionError
 =========================== 1 failed in 0.01 seconds ===========================
 ```
+#仮実装
+```
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 1 items
+
+messege_filter_test.py .
+
+=========================== 1 passed in 0.01 seconds ===========================
+```
