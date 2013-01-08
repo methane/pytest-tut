@@ -1,6 +1,9 @@
 class MessageFilter:
-    def __init__(self, word):
-        self.word = word
+    def __init__(self, *words):
+        self.words = words
 
     def detect(self, text):
-        return self.word in text
+        for word in self.words:
+            if word in text:
+                return True
+        return False

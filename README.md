@@ -111,3 +111,11 @@ E       TypeError: __init__() takes 2 positional arguments but 3 were given
 
 messege_filter_test.py:9: TypeError
 ====================== 1 failed, 1 passed in 0.01 seconds ======================
+#ベタな実装
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 2 items
+
+messege_filter_test.py ..
+
+=========================== 2 passed in 0.01 seconds ===========================
