@@ -135,3 +135,51 @@ messege_filter_test.py ..
 
 =========================== 2 passed in 0.01 seconds ===========================
 ```
+#第三イテレーション開始
+```
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 2 items
+
+messege_filter_test.py FF
+
+=================================== FAILURES ===================================
+_____________________________ test_single_argument _____________________________
+
+    def test_single_argument():
+        filter = MessageFilter('foo')
+>       check_foo(filter)
+
+messege_filter_test.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filter = <messege_filter.MessageFilter object at 0x107e09f90>
+
+    def check_foo(filter):
+        assert filter.detect("hello from foo"), "should detect message with NG word."
+        assert not filter.detect("hello, world!"), "should not detect message without NG word."
+>       assert filter.ng_words, "should not be empty."
+E       AttributeError: 'MessageFilter' object has no attribute 'ng_words'
+
+messege_filter_test.py:6: AttributeError
+____________________________ test_multiple_argument ____________________________
+
+    def test_multiple_argument():
+        filter = MessageFilter('foo', 'bar')
+        assert filter.detect('hello from bar')
+>       check_foo(filter)
+
+messege_filter_test.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filter = <messege_filter.MessageFilter object at 0x107e09e90>
+
+    def check_foo(filter):
+        assert filter.detect("hello from foo"), "should detect message with NG word."
+        assert not filter.detect("hello, world!"), "should not detect message without NG word."
+>       assert filter.ng_words, "should not be empty."
+E       AttributeError: 'MessageFilter' object has no attribute 'ng_words'
+
+messege_filter_test.py:6: AttributeError
+=========================== 2 failed in 0.02 seconds ===========================
+```
