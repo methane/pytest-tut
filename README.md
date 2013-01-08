@@ -125,3 +125,13 @@ messege_filter_test.py ..
 
 =========================== 2 passed in 0.01 seconds ===========================
 ```
+#テストを追加
+```
+============================= test session starts ==============================
+platform darwin -- Python 3.3.0 -- pytest-2.3.4
+collected 2 items
+
+messege_filter_test.py ..
+
+=========================== 2 passed in 0.01 seconds ===========================
+```
